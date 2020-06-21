@@ -1,0 +1,47 @@
+.list-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+     grid-template-rows: auto; 
+    grid-gap: 20px;
+
+  
+    /* border-style: solid; */
+    /* border-color: black; */
+
+    /* background-color:#855E42; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+    /* background-image: url(../assets/wooden-background_24972-623.jpg); */
+    /* background-image: #fff url(https://our.fogbugz.com/images/tbKiwiLogo.gif) no-repeat 4px 8px;
+    background-position: center;
+    background-size: cover; */
+
+
+}
+
+.card-container{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /* border-style: solid; */
+    /* border-color: darkgreen; */
+
+    background-color: whitesmoke;
+
+    padding: 10%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.button-class{
+
+    margin-top: 15px;
+    justify-self: center;
+    align-self: center;
+}
+
+

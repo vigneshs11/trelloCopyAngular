@@ -1,0 +1,21 @@
+<div id="modal-content-wrapper">
+  <header id="modal-header">
+    <input  type='text' placeholder="Task Name" #header [(ngModel)]='cardName'/>
+  </header>
+  
+  <section id="modal-body">
+   
+   
+      <input type='text' placeholder="Description" id='description'   #description/><mat-icon [inline]='true'  style='margin-left: 15px;' (click)='addComment(description.value)'>add</mat-icon>
+
+      <div>
+        <ul class='comment-section'>
+           <li *ngFor='let comment of commentList'>{{comment}}</li>
+        </ul>
+      </div>
+  </section>
+  <footer id="modal-footer">
+      <button *ngIf="data.task == 'edit'" id="modal-action-button" (click)="deleteFunction()">Delete</button>
+      <button  id="modal-cancel-button" (click)="closeModal()">Save</button>
+  </footer>
+</div>

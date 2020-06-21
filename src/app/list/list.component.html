@@ -1,0 +1,18 @@
+
+<div>
+<div class="list-header"><input type='text' [value]="currListName" /><span style='margin-left:8px'><button   class='button-delete' (click)='deleteListMethod()'><mat-icon [inline]='true'>delete</mat-icon></button></span> </div>
+
+<div id='card-title' 
+ cdkDropList 
+(cdkDropListDropped)="drop($event)"
+[cdkDropListData]="currCardsList">
+     <div cdkDrag class='card-title' *ngFor='let card of currCardsList;let i = index;'>
+        {{currCardsList[i].title}}
+    <span ><mat-icon aria-hidden="false" aria-label="View" id="preview" (click)='openPreview(i)' >preview</mat-icon></span></div>
+    <!-- <input class='card-title' cdkDrag placeholder="card-title" [(ngModel)]='currCardsList[i].title'> -->
+
+</div>
+
+<div class='button-class' (click)='addNewCard()'><mat-icon [inline]='true'>add</mat-icon></div>
+</div>
+
